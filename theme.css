@@ -1,44 +1,47 @@
-/* Smolak brand palette. Loaded after styles.css; layout remains unchanged. */
-:root{--brand-blue:#3898c4;--brand-deep:#176b94;--bg:#ffffff;--surface:#f2f8fc;--ink:#152d40;--muted:#536b7d;--accent:#176b94;--line:#d6e5ee;--paper:#f2f8fc;--dark:#152d40}
+/* Dark Smolak palette and transparent logo. Layout and content are unchanged. */
+:root{color-scheme:dark;--brand-blue:#65b6e4;--brand-deep:#247fb3;--bg:#0b1420;--surface:#111f2e;--ink:#e7eef5;--muted:#a4b5c6;--accent:#65b6e4;--line:#293e52;--paper:#101d2b;--dark:#e7eef5}
 body{background:var(--bg);color:var(--ink)}
-.header{background:rgba(255,255,255,.98);border-color:var(--line)}
-.brand{color:var(--brand-deep)}
+.header{background:rgba(11,20,32,.98);border-color:var(--line)}
+/* Existing text remains available to assistive technology. */
+.header .brand,.footer-top .brand{display:block;width:240px;height:54px;flex-shrink:0;font-size:0;background:url('/assets/smolak-logo.svg') no-repeat center;background-size:contain}
+.header .brand>* ,.footer-top .brand>*{visibility:hidden}
 .brand-mark span,.accent,.symbol-dot{color:var(--brand-blue)}
 nav a,.eyebrow{color:var(--muted)}
-nav a:hover{color:var(--brand-deep)}
-.nav-connect{border-color:var(--brand-blue);color:var(--brand-deep)}
-.nav-connect:hover{background:var(--surface)}
+nav a:hover{color:var(--brand-blue)}
+.nav-connect{border-color:#385b76;color:var(--ink)}
+.nav-connect:hover{background:var(--surface);border-color:var(--brand-blue)}
 h1>span{color:var(--brand-blue)}
 .status-dot{background:var(--brand-blue)}
-.primary,.skip{background:var(--brand-deep);color:#fff}
-.primary:hover{background:#125777}
-.orbit{border-color:#a9d2e6}
-.hero-symbol>span{color:var(--brand-deep)}
+.primary,.skip{background:var(--brand-blue);color:#081522}
+.primary:hover{background:#8fcdf0}
+.orbit{border-color:#2a526e}
+.hero-symbol>span{color:#cbddeb}
 .light{background:var(--paper);color:var(--ink)}
-.section-label,.light .section-label{color:var(--brand-deep)}
+.section-label,.light .section-label{color:var(--brand-blue)}
 .light .body-copy,.light .muted,.engagement-list{color:var(--muted)}
-.pill-row span{border-color:#bfd6e3;background:#fff;color:var(--brand-deep)}
-.company-card{background:#fff}
-.company-card:hover{background:#f6fbfe}
-.card-category,.card-link,.leader-role{color:var(--brand-deep)}
+.pill-row span{border-color:var(--line);background:#132436;color:#bfd9eb}
+.company-card{background:#0f1b29}
+.company-card:hover{background:#142538}
+.card-category,.card-link,.leader-role{color:var(--brand-blue)}
 .card-number{color:var(--muted)}
-.card-tagline{color:#294f69}
-.card-link:hover{border-color:var(--brand-deep)}
-.blockchain-section{background:#edf6fb;border-color:var(--line)}
-.blockchain-card{border-color:#a9cddd}
-.token{color:var(--brand-deep);border-color:#a9cddd;background:#fff}
+.card-tagline{color:#cfdeeb}
+.card-link:hover{border-color:var(--brand-blue)}
+.blockchain-section{background:#101e2d;border-color:var(--line)}
+.blockchain-card{border-color:#36566e}
+.token{color:var(--brand-blue);border-color:#36566e;background:#142638}
 .service-list li{border-color:var(--line)}
-.service-list li:after{color:var(--brand-deep)}
-.article-title:hover{color:var(--brand-deep)}
-.article-arrow:hover{background:var(--brand-deep);color:#fff}
-.leadership-section{background:#f2f8fc}
-.contact-section{background:var(--brand-deep);color:#fff}
-.contact-section .section-label{color:#d9effa}
-.contact-bottom p{color:#edf7fc}
-.dark{background:#fff;color:var(--brand-deep)}
-.dark:hover{background:#e7f3fa}
-.footer{background:#fff}
+.service-list li:after{color:var(--brand-blue)}
+.article-title:hover{color:var(--brand-blue)}
+.article-arrow:hover{background:var(--brand-blue);color:#081522}
+.leadership-section{background:#101d2b}
+.contact-section{background:#132b40;color:var(--ink);border-top:1px solid #2c506b}
+.contact-section .section-label{color:var(--brand-blue)}
+.contact-bottom p{color:#b6c9d9}
+.dark{background:var(--brand-blue);color:#081522}
+.dark:hover{background:#8fcdf0}
+.footer{background:#09111b}
 .noscript{background:var(--paper);color:var(--ink)}
-a:focus-visible,button:focus-visible{outline-color:#176b94}
-.contact-section a:focus-visible{outline-color:#fff}
-@media(max-width:760px){nav{background:#fff}.menu-toggle{color:var(--ink);border-color:var(--line)}}
+a:focus-visible,button:focus-visible{outline-color:#8fcdf0}
+@media(max-width:1050px){.header .brand{width:205px;height:48px}}
+@media(max-width:760px){nav{background:var(--bg)}.menu-toggle{color:var(--ink);border-color:var(--line)}.header .brand{width:195px;height:46px}.footer-top .brand{width:210px;height:48px}}
+@media(max-width:360px){.header .brand{width:165px;height:40px}}
