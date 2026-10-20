@@ -1,0 +1,44 @@
+/* Smolak brand palette. Loaded after styles.css; layout remains unchanged. */
+:root{--brand-blue:#3898c4;--brand-deep:#176b94;--bg:#ffffff;--surface:#f2f8fc;--ink:#152d40;--muted:#536b7d;--accent:#176b94;--line:#d6e5ee;--paper:#f2f8fc;--dark:#152d40}
+body{background:var(--bg);color:var(--ink)}
+.header{background:rgba(255,255,255,.98);border-color:var(--line)}
+.brand{color:var(--brand-deep)}
+.brand-mark span,.accent,.symbol-dot{color:var(--brand-blue)}
+nav a,.eyebrow{color:var(--muted)}
+nav a:hover{color:var(--brand-deep)}
+.nav-connect{border-color:var(--brand-blue);color:var(--brand-deep)}
+.nav-connect:hover{background:var(--surface)}
+h1>span{color:var(--brand-blue)}
+.status-dot{background:var(--brand-blue)}
+.primary,.skip{background:var(--brand-deep);color:#fff}
+.primary:hover{background:#125777}
+.orbit{border-color:#a9d2e6}
+.hero-symbol>span{color:var(--brand-deep)}
+.light{background:var(--paper);color:var(--ink)}
+.section-label,.light .section-label{color:var(--brand-deep)}
+.light .body-copy,.light .muted,.engagement-list{color:var(--muted)}
+.pill-row span{border-color:#bfd6e3;background:#fff;color:var(--brand-deep)}
+.company-card{background:#fff}
+.company-card:hover{background:#f6fbfe}
+.card-category,.card-link,.leader-role{color:var(--brand-deep)}
+.card-number{color:var(--muted)}
+.card-tagline{color:#294f69}
+.card-link:hover{border-color:var(--brand-deep)}
+.blockchain-section{background:#edf6fb;border-color:var(--line)}
+.blockchain-card{border-color:#a9cddd}
+.token{color:var(--brand-deep);border-color:#a9cddd;background:#fff}
+.service-list li{border-color:var(--line)}
+.service-list li:after{color:var(--brand-deep)}
+.article-title:hover{color:var(--brand-deep)}
+.article-arrow:hover{background:var(--brand-deep);color:#fff}
+.leadership-section{background:#f2f8fc}
+.contact-section{background:var(--brand-deep);color:#fff}
+.contact-section .section-label{color:#d9effa}
+.contact-bottom p{color:#edf7fc}
+.dark{background:#fff;color:var(--brand-deep)}
+.dark:hover{background:#e7f3fa}
+.footer{background:#fff}
+.noscript{background:var(--paper);color:var(--ink)}
+a:focus-visible,button:focus-visible{outline-color:#176b94}
+.contact-section a:focus-visible{outline-color:#fff}
+@media(max-width:760px){nav{background:#fff}.menu-toggle{color:var(--ink);border-color:var(--line)}}
