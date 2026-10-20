@@ -1,4 +1,4 @@
-/* Dark Smolak palette and transparent logo. Layout and content are unchanged. */
+/* Dark Smolak palette and transparent logo. */
 :root{color-scheme:dark;--brand-blue:#65b6e4;--brand-deep:#247fb3;--bg:#0b1420;--surface:#111f2e;--ink:#e7eef5;--muted:#a4b5c6;--accent:#65b6e4;--line:#293e52;--paper:#101d2b;--dark:#e7eef5}
 body{background:var(--bg);color:var(--ink)}
 .header{background:rgba(11,20,32,.98);border-color:var(--line)}
@@ -34,6 +34,10 @@ h1>span{color:var(--brand-blue)}
 .article-title:hover{color:var(--brand-blue)}
 .article-arrow:hover{background:var(--brand-blue);color:#081522}
 .leadership-section{background:#101d2b}
+/* Decorative portrait complements the adjacent named biography. */
+.leadership-section .split{align-items:center}
+.leadership-section .section-label{margin-bottom:0}
+.leadership-section .section-label::after{content:'';display:block;width:min(100%,320px);aspect-ratio:1;margin-top:26px;border:1px solid #36566e;border-radius:12px;background:#172a3c url('/assets/adam-paul-smolak.svg') center/cover no-repeat;box-shadow:0 18px 45px rgba(0,0,0,.18)}
 .contact-section{background:#132b40;color:var(--ink);border-top:1px solid #2c506b}
 .contact-section .section-label{color:var(--brand-blue)}
 .contact-bottom p{color:#b6c9d9}
@@ -43,5 +47,5 @@ h1>span{color:var(--brand-blue)}
 .noscript{background:var(--paper);color:var(--ink)}
 a:focus-visible,button:focus-visible{outline-color:#8fcdf0}
 @media(max-width:1050px){.header .brand{width:205px;height:48px}}
-@media(max-width:760px){nav{background:var(--bg)}.menu-toggle{color:var(--ink);border-color:var(--line)}.header .brand{width:195px;height:46px}.footer-top .brand{width:210px;height:48px}}
+@media(max-width:760px){nav{background:var(--bg)}.menu-toggle{color:var(--ink);border-color:var(--line)}.header .brand{width:195px;height:46px}.footer-top .brand{width:210px;height:48px}.leadership-section .split{gap:32px}.leadership-section .section-label::after{width:min(100%,280px)}}
 @media(max-width:360px){.header .brand{width:165px;height:40px}}
