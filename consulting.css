@@ -1,0 +1,22 @@
+/* Consulting: informational process tiles, not navigation cards. */
+#consulting .consulting-intro{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;margin-bottom:44px}
+#consulting .consulting-intro h2{margin-bottom:0}
+#consulting .consulting-intro .intro{font-size:21px}
+#consulting .consulting-intro .muted{margin-bottom:0}
+.consulting-process{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.process-tile{padding:30px;background:#132436;border:1px solid #304b61;border-radius:8px;cursor:default;min-width:0}
+.process-step{display:block;font:11px/1.6 'Courier New',monospace;letter-spacing:.1em;color:var(--accent);margin-bottom:30px}
+.process-tile h3{font-size:30px;margin-bottom:18px}
+.process-tile p{font-size:14px;line-height:1.8;color:var(--muted);margin-bottom:24px}
+.process-output{border-top:1px solid var(--line);padding-top:18px;color:#d8e7f2;font-size:12px;line-height:1.7}
+.process-output span{display:block;font:10px/1.6 'Courier New',monospace;letter-spacing:.08em;color:var(--accent);margin-bottom:5px}
+.consulting-footer{display:flex;align-items:center;justify-content:space-between;gap:38px;margin-top:35px}
+.consulting-capabilities{flex:1;min-width:0}
+#consulting .small-heading{margin:0 0 12px;color:var(--muted);font-weight:400}
+#consulting .service-list{display:flex;flex-wrap:wrap;gap:8px;margin:0}
+#consulting .service-list li{display:block;padding:8px 11px;border:1px solid var(--line);border-radius:4px;font-size:11px;color:#c5d7e6;cursor:default}
+#consulting .service-list li::after{content:none;display:none}
+.consulting-footer .button{flex-shrink:0;align-self:flex-end}
+#consulting #engagements{margin-top:35px}
+@media(max-width:1050px){#consulting .consulting-intro{gap:40px}.process-tile{padding:23px}.consulting-footer{align-items:flex-start}}
+@media(max-width:760px){#consulting .consulting-intro{grid-template-columns:1fr;gap:25px;margin-bottom:30px}.consulting-process{grid-template-columns:1fr;gap:14px}.process-tile{padding:26px}.process-step{margin-bottom:18px}.process-tile h3{font-size:28px}.consulting-footer{flex-direction:column;gap:25px}.consulting-footer .button{align-self:flex-start}}
